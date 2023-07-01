@@ -45,7 +45,7 @@ parseFunction =
 parseVariable :: Parser Expression
 parseVariable =
   Variable
-    <$> 
+    <$> many1 letter
 
 
 -- IO --
